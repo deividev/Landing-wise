@@ -1,5 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { render } from '@testing-library/angular';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -27,5 +29,9 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain(
       'Hello, static-template',
     );
+  });
+  it('should match the snapshot', async () => {
+    const { container } = await render(AppComponent);
+    expect(container).toMatchSnapshot();
   });
 });
