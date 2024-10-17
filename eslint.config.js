@@ -31,6 +31,7 @@ module.exports = tseslint.config(
         },
       ],
       'no-console': 'error',
+      'consistent-return': 'error'
     },
   },
   {
