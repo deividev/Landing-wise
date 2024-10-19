@@ -17,7 +17,7 @@ export class AppComponent {
   languages = languages;
 
   constructor(public translationService: TranslateService) {
-    translationService.setDefaultLang('en');
+    translationService.setDefaultLang('es');
   }
 
   changeLang(event: Event): void {
