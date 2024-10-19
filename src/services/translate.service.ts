@@ -12,6 +12,10 @@ export class TranslationService {
     private translateService: TranslateService,
     @Inject(PLATFORM_ID) private platformId: ObjectConstructor,
   ) {
+    this.initializeLanguage();
+  }
+
+  private initializeLanguage(): void {
     if (isPlatformBrowser(this.platformId)) {
       const savedLang = localStorage.getItem('lng');
       if (savedLang) {
