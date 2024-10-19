@@ -31,7 +31,8 @@ module.exports = tseslint.config(
         },
       ],
       'no-console': 'error',
-      'consistent-return': 'error'
+      '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/explicit-function-return-type': 'error',
     },
   },
   {

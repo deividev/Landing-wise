@@ -20,7 +20,7 @@ export class AppComponent {
     translationService.setDefaultLang('en');
   }
 
-  changeLang(event: Event) {
+  changeLang(event: Event): void {
     const target = event.target as HTMLInputElement;
     this.translationService.use(target.value);
   }

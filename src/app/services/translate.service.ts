@@ -6,7 +6,7 @@ import { isPlatformBrowser } from '@angular/common';
   providedIn: 'root',
 })
 export class TranslationService {
-  defaultLang = 'de';
+  defaultLang = 'es';
 
   constructor(
     private translateService: TranslateService,
@@ -22,7 +22,7 @@ export class TranslationService {
     }
   }
 
-  public changeLang(lang: string) {
+  public changeLang(lang: string): void {
     this.translateService.use(lang);
     if (isPlatformBrowser(this.platformId)) {
       localStorage.setItem('lng', lang);
