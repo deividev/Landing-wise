@@ -1,0 +1,15 @@
+<div class="hero-section">
+  <h1>{{ 'heroSection.title' | translate }}</h1>
+  <p>{{ 'heroSection.description' | translate }}</p>
+
+  <div class="email-signup">
+    <input
+      type="email"
+      pInputText
+      [placeholder]="'heroSection.emailForm.placeHolder' | translate"
+    />
+    <button pButton icon="pi pi-check">Do it</button>
+  </div>
+  <p class="legal-note">{{ 'heroSection.emailForm.legal' | translate }}</p>
+</div>
+<app-hero-video-overlay></app-hero-video-overlay>
