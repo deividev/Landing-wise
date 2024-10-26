@@ -1,0 +1,16 @@
+<div class="flex justify-content-between align-items-center w-full mb-4 p-4">
+  <div>Logo</div>
+  <!-- <select aria-label="Selected Language" (change)="changeLang($event)">
+    <option value="es">Español</option>
+    <option value="de">Aleman</option>
+    <option value="en">English</option>
+  </select> -->
+
+  <p-dropdown
+    [options]="languages"
+    [(ngModel)]="selectedLanguage"
+    (onChange)="changeLang($event)"
+    optionLabel="name"
+    placeholder="Select a City"
+  />
+</div>
