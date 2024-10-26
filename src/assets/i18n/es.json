@@ -1,6 +1,11 @@
 {
-  "table": {
-    "TITLE": "Hola Mundo!",
-    "DESCRIPTION": "Aquí viene algo de texto..."
+  "heroSection": {
+    "title": "STEROIDS™ PARA LOS NEGOCIOS",
+    "subtitle": "Frontend Developer and DevOps",
+    "description": "Frontend and DevOps development with experience in developing web and mobile applications. We are passionate about technology and programming, always looking to learn new things and improve our skills.",
+    "emailForm": {
+      "placeHolder": "Introduce tu correo electrónico aquí y te contactaremos",
+      "legal": "*100% Legal"
+    }
   }
 }
